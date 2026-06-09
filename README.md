@@ -4,7 +4,6 @@
 ├── index.html                (Main landing page)
 ├── Dashboard.html            (Performance Tracker)
 ├── style.css                 (Global theme token sheet)
-├── app.js                    (Global interactivity engine)
 └── Pages/
     ├── About us.html         (Brand Philosophy)
     ├── services.html         (Gym Programs & Offerings)
