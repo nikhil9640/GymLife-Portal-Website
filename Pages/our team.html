@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymLife | Our Expert Team Crew</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .team-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+            padding: 80px 6%; 
+            max-width: 1440px; 
+            margin: 0 auto; 
+        }
+        .trainer-profile { 
+            background: var(--bg-surface); 
+            border: 1px solid var(--border-tint); 
+            border-radius: 20px; 
+            overflow: hidden; 
+            height: 450px; 
+            position: relative; 
+            transition: var(--transition-smooth); 
+        }
+        .trainer-profile:hover { 
+            border-color: var(--accent-blue); 
+            transform: translateY(-6px); 
+        }
+        .trainer-profile img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+        .profile-desc { 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            padding: 25px; 
+            background: linear-gradient(0deg, #0a0a0a 40%, transparent 100%); 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="global-header">
+        <div class="logo"><a href="../index.html"><i class="fa-solid fa-dumbbell"></i> GYM<span>M</span></a></div>
+        <button class="menu-toggle" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <nav id="navbar" class="main-navigation">
+            <ul class="nav-menu-list">
+                <li><a href="../index.html" class="nav-route">Home</a></li>
+                <li><a href="About us.html" class="nav-route">About Us</a></li>
+                <li><a href="services.html" class="nav-route">Services</a></li>
+                <li><a href="timetable.html" class="nav-route">Classes</a></li>
+                <li><a href="contact.html" class="nav-route">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <h1>Our Performance Team</h1>
+        <div class="breadcrumbs"><a href="../index.html">Home</a><span class="breadcrumb-separator">&#8250;</span><span class="current-page">Our Team</span></div>
+    </section>
+
+    <main class="team-grid">
+        <div class="trainer-profile">
+            <img src="https://wonderful6pack.wordpress.com/wp-content/uploads/2013/12/cb5b3-hrithik.jpg" alt="Hrithik Roshan">
+            <div class="profile-desc">
+                <h3 style="font-family: var(--font-heading); font-size: 20px;">Hrithik Roshan</h3>
+                <p style="color: var(--accent-blue); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Powerlifting Expert Coach</p>
+            </div>
+        </div>
+        <div class="trainer-profile">
+            <img src="https://cdn.fitimg.in/gallery_image_salman-khan-leg-workout_5E36.jpg" alt="Salman Khan">
+            <div class="profile-desc">
+                <h3 style="font-family: var(--font-heading); font-size: 20px;">Salman Khan</h3>
+                <p style="color: var(--accent-blue); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Lower Body Dynamics Specialist</p>
+            </div>
+        </div>
+        <div class="trainer-profile">
+            <img src="https://mxp-media.ilnmedia.com/media/content/2021/Dec/To-Avoid-In-The-Gym-To-Build-Muscles-Like-Ram-Charan-In-RRR-Fast-1_61b86f6199a2d.jpeg?w=1500&h=921&cc=1" alt="Ram Charan Portrait">
+            <div class="profile-desc">
+                <h3 style="font-family: var(--font-heading); font-size: 20px;">Ram Charan</h3>
+                <p style="color: var(--accent-blue); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Cardio Expert</p>
+            </div>
+        </div>
+        <div class="trainer-profile">
+            <img src="https://i.pinimg.com/736x/45/07/6c/45076ce286d8bf0ad9b9a3c36d2ed9fc.jpg" alt="Rakul Preeti Singh Portrait">
+            <div class="profile-desc">
+                <h3 style="font-family: var(--font-heading); font-size: 20px;">Rakul Preeti Singh</h3>
+                <p style="color: var(--accent-blue); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">High-intensity interval training Supervisor</p>
+            </div>
+        </div>
+
+        <div class="trainer-profile">
+            <img src="https://scontent.fhyd7-1.fna.fbcdn.net/v/t39.30808-6/652314218_1381852997079539_8484545053572439508_n.jpg?stp=dst-jpg_tt6&cstp=mx1068x1424&ctp=s1068x1424&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AOVEf4SQoRYQ7kNvwG3OqP2&_nc_oc=AdrYo6ZmoONbn0kWveC6fnwZVHdUEoOT-BtTiWN0vLvRfojiTUqZjERLBZObVH_bsGE&_nc_zt=23&_nc_ht=scontent.fhyd7-1.fna&_nc_gid=cmWhuXng_-0sR5qFJwhmlw&_nc_ss=7b289&oh=00_Af9UQ3aPfAaPQ5L5eXNq8pUVcUsVYQmAgXo30V6O-9kwkQ&oe=6A2BE52D" alt="Naga Chaitanya Portrait">
+            <div class="profile-desc">
+                <h3 style="font-family: var(--font-heading); font-size: 20px;">Naga Chaitanya</h3>
+                <p style="color: var(--accent-blue); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Powerlifting Expert Coach</p>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

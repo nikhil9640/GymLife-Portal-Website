@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta "viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymLife | Magazine Portal Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .blog-container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); 
+            gap: 40px; 
+            padding: 60px 6%; 
+            max-width: 1440px; 
+            margin: 0 auto; 
+        }
+        .blog-card { 
+            background: var(--bg-surface); 
+            border: 1px solid var(--border-tint); 
+            border-radius: 20px; 
+            overflow: hidden; 
+            transition: var(--transition-smooth); 
+        }
+        .blog-card:hover { 
+            transform: translateY(-6px); 
+            border-color: rgba(0,240,255,0.3); 
+        }
+        .graphic-wrapper { 
+            background: linear-gradient(135deg, #171a26, #0d0f15); 
+            height: 220px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        .graphic-wrapper i { 
+            font-size: 3.5rem; 
+            color: var(--accent-blue); 
+            transition: var(--transition-smooth); 
+        }
+        .blog-card:hover .graphic-wrapper i { 
+            transform: scale(1.1) rotate(3deg); 
+            color: var(--accent-pink); 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="global-header">
+        <div class="logo"><a href="../index.html"><i class="fa-solid fa-dumbbell"></i> GYM<span>M</span></a></div>
+        <button class="menu-toggle" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <nav id="navbar" class="main-navigation">
+            <ul class="nav-menu-list">
+                <li><a href="../index.html" class="nav-route">Home</a></li>
+                <li><a href="About us.html" class="nav-route">About Us</a></li>
+                <li><a href="services.html" class="nav-route">Services</a></li>
+                <li><a href="timetable.html" class="nav-route">Classes</a></li>
+                <li><a href="contact.html" class="nav-route">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <h1>Elite Fitness Insights</h1>
+        <div class="breadcrumbs"><a href="../index.html">Home</a><span class="breadcrumb-separator">&#8250;</span><span class="current-page">Our Blog</span></div>
+    </section>
+
+    <main class="blog-container">
+        <article class="blog-card">
+            <div class="graphic-wrapper"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <div style="padding: 30px;">
+                <span style="font-size:11px; 
+                text-transform:uppercase; 
+                color:var(--accent-blue); 
+                font-weight:700; 
+                letter-spacing:1px;"> Hypertrophy</span>
+                <h3 style="font-family:var(--font-heading); font-size:22px; color:#fff; margin: 10px 0;">Heavy Compound Work</h3>
+                <p style="color:var(--text-muted); font-size:14px; margin-bottom:20px;">Break genetic baseline targets safely via functional physical compound lifts.</p>
+                <a href="#" style="color:#fff; font-size:13px; font-weight:700; text-transform:uppercase;">Read Entry <i class="fa-solid fa-arrow-right-long" style="margin-left:6px;"></i></a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

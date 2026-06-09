@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymLife | Activity Dashboard Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .metrics-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 30px; 
+            padding: 60px 6%; 
+            max-width: 1440px; 
+            margin: 0 auto; 
+        }
+        .metric-card { 
+            background: var(--bg-surface); 
+            border: 1px solid var(--border-tint); 
+            padding: 30px; 
+            border-radius: 20px; 
+            display: flex; 
+            align-items: center; 
+            gap: 25px; 
+        }
+        .metric-icon { 
+            width: 60px; 
+            height: 60px; 
+            background: var(--accent-blue-dim); 
+            border: 1px solid rgba(0,243,255,0.2); 
+            border-radius: 14px;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 24px; 
+            color: var(--accent-blue); 
+        }
+        .metric-value { 
+            font-family: var(--font-heading); 
+            font-size: 28px; 
+            font-weight: 700; 
+            margin-top: 4px; 
+            color: var(--text-pure); 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="global-header">
+        <div class="logo"><a href="index.html"><i class="fa-solid fa-dumbbell"></i> GYM<span>M</span></a></div>
+        <button class="menu-toggle" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <nav id="navbar" class="main-navigation">
+            <ul class="nav-menu-list">
+                <li><a href="index.html" class="nav-route">Home</a></li>
+                <li><a href="Pages/About us.html" class="nav-route">About Us</a></li>
+                <li><a href="Pages/services.html" class="nav-route">Services</a></li>
+                <li><a href="Pages/timetable.html" class="nav-route">Classes</a></li>
+                <li><a href="Pages/contact.html" class="nav-route">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <h1>Performance Dashboard</h1>
+        <div class="breadcrumbs"><a href="index.html">Home</a><span class="breadcrumb-separator">&#8250;</span><span class="current-page">Dashboard</span></div>
+    </section>
+
+    <main class="metrics-grid">
+        <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div><h3 style="font-size:12px; text-transform:uppercase; color:var(--text-muted);">Active Streak</h3><p class="metric-value">18 Days</p></div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-fire"></i></div>
+            <div><h3 style="font-size:12px; text-transform:uppercase; color:var(--text-muted);">Energy Burned</h3><p class="metric-value">14,230 kcal</p></div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-weight-hanging"></i></div>
+            <div><h3 style="font-size:12px; text-transform:uppercase; color:var(--text-muted);">Volume Lifted</h3><p class="metric-value">42.5 Tons</p></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

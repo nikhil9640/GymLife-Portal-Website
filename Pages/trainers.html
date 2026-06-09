@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymLife | Dashboard & Team Cast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .trainers-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 40px; 
+            padding: 60px 6%; 
+            max-width: 1440px; 
+            margin: 0 auto; 
+        }
+        .card-frame { 
+            background: var(--bg-surface);
+            border: 1px solid var(--border-tint); 
+            border-radius: 24px; 
+            position: relative; 
+            overflow: hidden; 
+            height: 480px; 
+            transition: var(--transition-smooth); 
+        }
+        .card-frame:hover { 
+            transform: translateY(-8px); 
+            border-color: var(--accent-blue); 
+        }
+        .card-frame img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: var(--transition-smooth); 
+        }
+        .card-frame:hover img { 
+            transform: scale(1.05); 
+        }
+        .card-info { 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            padding: 30px; 
+            background: linear-gradient(0deg, var(--bg-surface) 50%, transparent 100%); 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="global-header">
+        <div class="logo"><a href="../index.html"><i class="fa-solid fa-dumbbell"></i> GYM<span>M</span></a></div>
+        <button class="menu-toggle" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <nav id="navbar" class="main-navigation">
+            <ul class="nav-menu-list">
+                <li><a href="../index.html" class="nav-route">Home</a></li>
+                <li><a href="About us.html" class="nav-route">About Us</a></li>
+                <li><a href="services.html" class="nav-route">Services</a></li>
+                <li><a href="timetable.html" class="nav-route">Classes</a></li>
+                <li><a href="contact.html" class="nav-route">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <h1>Dashboard Elite Cast</h1>
+        <div class="breadcrumbs"><a href="../index.html">Home</a><span class="breadcrumb-separator">&#8250;</span><span class="current-page">Trainers</span></div>
+    </section>
+
+    <main class="trainers-grid">
+        <div class="card-frame">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=600" alt="Alex Rivers">
+            <div class="card-info">
+                <h3 style="font-family: var(--font-heading); font-size: 22px;">Alex Rivers</h3>
+                <p style="color: var(--accent-blue); font-size: 13px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">Strength & Conditioning</p>
+            </div>
+        </div>
+        <div class="card-frame">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=600" alt="Sarah Jenkins">
+            <div class="card-info">
+                <h3 style="font-family: var(--font-heading); font-size: 22px;">Sarah Jenkins</h3>
+                <p style="color: var(--accent-blue); font-size: 13px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">High Intensity Interval Workouts</p>
+            </div>
+        </div>
+        <div class="card-frame">
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&q=80&w=600" alt="Marcus Vance">
+            <div class="card-info">
+                <h3 style="font-family: var(--font-heading); font-size: 22px;">Marcus Vance</h3>
+                <p style="color: var(--accent-blue); font-size: 13px; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">Powerlifting Systems</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymLife | Our Services & Programs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .services-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 40px; 
+            padding: 80px 6%; 
+            max-width: 1440px; 
+            margin: 0 auto; 
+        }
+        .service-card { 
+            background: var(--bg-surface); 
+            border: 1px solid var(--border-tint); 
+            padding: 40px 30px; 
+            border-radius: 20px; 
+            transition: var(--transition-smooth); 
+        }
+        .service-card:hover { 
+            border-color: var(--accent-blue); 
+            transform: translateY(-5px); 
+        }
+        .service-icon { 
+            font-size: 2.5rem; 
+            color: var(--accent-blue); 
+            margin-bottom: 25px; 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="global-header">
+        <div class="logo"><a href="../index.html"><i class="fa-solid fa-dumbbell"></i> GYM<span>M</span></a></div>
+        <button class="menu-toggle" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <nav id="navbar" class="main-navigation">
+            <ul class="nav-menu-list">
+                <li><a href="../index.html" class="nav-route">Home</a></li>
+                <li><a href="About us.html" class="nav-route">About Us</a></li>
+                <li><a href="services.html" class="nav-route active">Services</a></li>
+                <li><a href="timetable.html" class="nav-route">Classes</a></li>
+                <li><a href="contact.html" class="nav-route">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <h1>Elite Gym Services</h1>
+        <div class="breadcrumbs"><a href="../index.html">Home</a><span class="breadcrumb-separator">&#8250;</span><span class="current-page">Services</span></div>
+    </section>
+
+    <main class="services-grid">
+        <div class="service-card">
+            <i class="fa-solid fa-weight-lifting-stone service-icon"></i>
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 15px;">Strength Coaching</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Tailored resistance tracks utilizing premium biomechanically optimized machinery clusters.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-bolt service-icon" style="color: var(--accent-pink);"></i>
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 15px;">HIIT Modules</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">High intensity metric monitoring cardiovascular circuits designed for extreme conditioning baseline goals.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-heart-pulse service-icon"></i>
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 15px;">Biometric Mapping</h3>
+            <p style="color: var(--text-muted); font-size: 14px;">Complete physiological assessments and real-time kinetic milestone processing structures.</p>
+        </div>
+    </main>
+</body>
+</html>
